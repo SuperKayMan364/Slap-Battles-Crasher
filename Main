@@ -29,7 +29,7 @@ MainSection:NewButton("Crash (UNLOCK DIAMOND FOR MORE LAG)", "Crashes The Game."
 		[1] = game:GetService("Players").LocalPlayer.Character,
 		[2] = false
 	}
-	for i=1,25 do
+	for i=1,500 do
 		game:GetService("ReplicatedStorage").HumanoidDied:FireServer(unpack(args))
 		game:GetService("ReplicatedStorage").Rockmode:FireServer()
 		end
